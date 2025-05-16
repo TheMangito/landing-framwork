@@ -1,11 +1,176 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
+import '../styles/global.css';
+import Header from '../components/Header.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+
+	<Header/>
+	<div class="mainimage" >
+        
+        <img class="inicio" src="/images/babymonster2.png" alt="Miembros del Grupo">
+    </div>
+    <section>
+        <div>
+            <div class="info-grid">
+                <div class="info-grid-item">
+                    <img class="info-image" src="/images/bm.jpg" alt="YG Entertainment Logo">
+                </div>
+                <div class="info-grid-item">
+                    <h1 class="text-info-title">BABYMONSTER</h1>
+                    <p class="info-text">Es un grupo femenino de K-pop formado por YG Entertainment en 2023. El grupo está compuesto por siete talentosas integrantes originarias de Corea del Sur, Japón y Tailandia. Su nombre refleja la combinación de juventud y habilidades excepcionales, describiéndolas como "pequeños monstruos" llenos de talento. </p>
+                </div>
+            </div> 
+        </div>
+              
+        <div class="info-grid">
+            <img class="info-image" src="/images/training.jpg">
+            <div class="info-grid-item">
+                <h1 class="text-info-title">TRAINING</h1>
+                <p class="info-text">YG Entertainment comenzó a planificar un nuevo grupo femenino en 2018. Después de un riguroso proceso de selección y entrenamiento, BABYMONSTER fue presentado oficialmente en 2023. </p>
+            </div>
+
+        </div>        
+    </section>
+
+    <section>
+        <div>
+            <h2 class="text-miembros">Miembros</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/chiquita_1.jpg" alt="Chiquita">
+                    <div class="grid-item-content">
+                        <h2>Chiquita</h2>
+                        <p>Miembro tailandesa de 15 años, la más joven del grupo, conocida por su impresionante habilidad en el baile.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/rora_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rora</h2>
+                        <p>Miembro surcoreana de 15 años, exintegrante del grupo infantil U.SSO Girl, aporta dulzura y talento vocal.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/rami_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Rami</h2>
+                        <p>Miembro Surcoreana de 16 años, comenzó como modelo infantil y destaca por su voz melodiosa.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/ahyeon_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Ahyeon</h2>
+                        <p>Miembro Surcoreana de 16 años, versátil en canto, rap y baile, considerada el "rostro del grupo.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/asa_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Asa</h2>
+                        <p>Miembro Japonesa de 17 años, talentosa rapera y bailarina, con habilidades en composición musical.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/pharita_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Pharita</h2>
+                        <p>Miembro Tailandesa de 18 años, reconocida por su potente voz y experiencia en modelaje.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img class="image-yg-logo" src="/images/ruka_1.jpg" alt="Rora">
+                    <div class="grid-item-content">
+                        <h2>Ruka</h2>
+                        <p>Miembro Japonesa de 22 años, destacada rapera y bailarina principal del grupo.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <h1 class="text-miembros">Proximos Lanzamientos</h1>
+        <div class="grid">
+            <div class="grid-item-audio">
+                <center><img class="image-yg-logo" src="/images/album1.jpg" alt="Rora"></center>
+                <div class="grid-item-content">
+                    <h2>DRIP</h2>
+                    <audio controls class="audio">
+                        <source src="/images/ALBUM3mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="grid-item-audio">
+                <center><img class="image-yg-logo" src="/images/album2.jpg" alt="Rora"></center>
+                <div class="grid-item-content">
+                    <h2>FOREVER</h2>
+                    <audio controls class="audio">
+                        <source src="/images/ALBUM2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="grid-item-audio">
+                <center><img class="image-yg-logo" src="/images/album3.jpg" alt="Rora"></center>
+                <div class="grid-item-content">
+                    <h2>MINI ALBUM</h2>
+                    <audio controls class="audio">
+                        <source src="/images/ALBUM1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="text-miembros">Ultimo Lanzamiento</h1>
+        <div class="grid">
+            <center><iframe class="video-youtube" style="padding-bottom: 5rem;" width="560" height="315" src="https://www.youtube.com/embed/Gz_yRl6703c?si=QnzxuNdQXERsHw2L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="grid">
+            <div>
+                <img style="padding-left: 30px;" class="footer-image" src="/images/logoyg.png" alt="Logo YG">
+                <p><small  style="padding-left: 30px;" class="footer-copyright">All contents of YG Entertainment are protected by copyright.</small></p>
+                <p><small style="padding-left: 30px;" class="footer-copyright">ⓒYG Entertainment ALL RIGHTS RESERVED.</small></p>
+            </div>
+            <div>
+                <h3 class="footer-copyright">Informacion</h3>
+                <ul class="list-footer">
+                    <li class="footer-copyright-link">
+                        Politica de Privacidad
+                    </li>
+                    <li class="footer-copyright-link">
+                        Acerca de Nosotros
+                    </li>
+                    <li class="footer-copyright-link">
+                        Contacto
+                    </li>
+                </ul>
+                
+            </div>
+            <div>
+                <h3 class="footer-copyright">Redes Sociales</h3>
+                <ul class="list-footer">
+                    <li class="footer-copyright">
+                        <a href="https://www.facebook.com/BABYMONSTER.ygofficial" class="list-link">Facebook</a>
+                    </li>
+                    <li class="footer-copyright">
+                        <a href="https://www.instagram.com/babymonster_ygofficial" class="list-link">Instagram</a>
+                    </li>
+                    <li class="footer-copyright">
+                        <a href="https://www.youtube.com/@BABYMONSTER" class="list-link">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </Layout>
