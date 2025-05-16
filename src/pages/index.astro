@@ -128,12 +128,7 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 
-	<section class="w-full py-20 h-screen">
-		<div class="bg-pink-500 w-full flex flex-col">
-			<h1 class="font-bold text-white text-4xl">Newsletter</h1>
-
-		</div>
-	</section>
+	
 
     <section>
         <h1 class="text-miembros">Ultimo Lanzamiento</h1>
@@ -142,6 +137,17 @@ import Footer from '../components/Footer.astro';
         </div>
     </section>
 	
+	<section class="container mx-auto mb-20">
+		<div class="bg-pink-500 w-full h-96 flex flex-col gap-5 justify-center items-center">
+			<h1 class="font-bold text-white text-4xl">Suscribete para las notificaciones</h1>
+			<p class="text-white font-medium">Ingresa tu correo para recibir las ultimas notificaciones acerca de nuevos discos o giras disponibles</p>
+			<form id="formulario" class="bg-white rounded-full w-md h-8 md:block flex flex-col justify-center items-center" action="/api/enviar_correo.ts">
+				<input type="email" name="email" id="email" placeholder="Mantente siempre alerta con las ultimas novedades" class="pl-3 text-xs rounded-full w-md h-8 appearance-none border-none bg-white placeholder-gray-300 gap-2" >
+				<button type="submit" class="rounded-4xl text-white bg-black gap-2 m-3 w-16">Enviar</button>
+			</form>
+			
+		</div>
+	</section>
 
     <Footer/>
 </Layout>
