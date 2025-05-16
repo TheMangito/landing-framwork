@@ -3,6 +3,7 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -134,43 +135,11 @@ import Header from '../components/Header.astro';
             <center><iframe class="video-youtube" style="padding-bottom: 5rem;" width="560" height="315" src="https://www.youtube.com/embed/Gz_yRl6703c?si=QnzxuNdQXERsHw2L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
+	<section class="container mx-auto">
+		<div class="">
 
-    <footer class="footer">
-        <div class="grid">
-            <div>
-                <img style="padding-left: 30px;" class="footer-image" src="/images/logoyg.png" alt="Logo YG">
-                <p><small  style="padding-left: 30px;" class="footer-copyright">All contents of YG Entertainment are protected by copyright.</small></p>
-                <p><small style="padding-left: 30px;" class="footer-copyright">ⓒYG Entertainment ALL RIGHTS RESERVED.</small></p>
-            </div>
-            <div>
-                <h3 class="footer-copyright">Informacion</h3>
-                <ul class="list-footer">
-                    <li class="footer-copyright-link">
-                        Politica de Privacidad
-                    </li>
-                    <li class="footer-copyright-link">
-                        Acerca de Nosotros
-                    </li>
-                    <li class="footer-copyright-link">
-                        Contacto
-                    </li>
-                </ul>
-                
-            </div>
-            <div>
-                <h3 class="footer-copyright">Redes Sociales</h3>
-                <ul class="list-footer">
-                    <li class="footer-copyright">
-                        <a href="https://www.facebook.com/BABYMONSTER.ygofficial" class="list-link">Facebook</a>
-                    </li>
-                    <li class="footer-copyright">
-                        <a href="https://www.instagram.com/babymonster_ygofficial" class="list-link">Instagram</a>
-                    </li>
-                    <li class="footer-copyright">
-                        <a href="https://www.youtube.com/@BABYMONSTER" class="list-link">Youtube</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+		</div>
+	</section>
+
+    <Footer/>
 </Layout>
