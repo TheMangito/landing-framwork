@@ -1,12 +1,11 @@
-// src/pages/api/enviar.ts
 import { Resend } from 'resend';
 import type { APIRoute } from 'astro';
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY); // Usa .env con la API KEY del resend
+const resend = new Resend(import.meta.env.RESEND_API_KEY);
 
-export const POST: APIRoute = async ({ request }) => { // Meneja la peticion POST
+export const POST: APIRoute = async ({ request }) => {
   const formData = await request.formData();
-  const email = formData.get('email'); //Toma el Email
+  const email = formData.get('email');
 
   if (typeof email !== 'string') {
     return new Response('Correo inválido', { status: 400 });
@@ -14,7 +13,7 @@ export const POST: APIRoute = async ({ request }) => { // Meneja la peticion POS
 
   try {
     await resend.emails.send({
-      from: 'TuNombre <onboarding@resend.dev>',
+      from: 'BabyMonsters <BabyMonsters@marketpick.com.mx>',
       to: email,
       subject: '¡Gracias por contactarnos!',
       html: `<p>Hola, hemos recibido tu correo. ¡Gracias por escribirnos!</p>`,
@@ -26,3 +25,4 @@ export const POST: APIRoute = async ({ request }) => { // Meneja la peticion POS
     return new Response('Error al enviar el correo', { status: 500 });
   }
 };
+
